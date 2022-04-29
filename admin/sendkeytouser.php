@@ -9,7 +9,7 @@ $a3 = $_POST['a3'];
 
 
 
- $con = mysqli_connect("localhost","root","");
+ $con = mysqli_connect("20.207.86.137:52000","root","root");
                                 if (!$con)
                                     echo('Could not connect: ' . mysqli_error($con));
                                 else

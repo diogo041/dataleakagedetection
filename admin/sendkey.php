@@ -18,7 +18,7 @@ if (!isset($_SESSION['name'])) {
 	echo "<script type=\"text/javascript\">" . " alert('Please Login'); " . "</script>";
 }
 if (!$_SESSION['name']) {
-	echo  header("Location: http://localhost/data lekage detaction/adminlogin.php");
+	echo  header("Location: http://20.207.86.137:52000/data lekage detaction/adminlogin.php");
 } else {
 
 	define('ADMIN', $_SESSION['name']); //Get the user name from the previously registered super global variable
@@ -71,7 +71,7 @@ if (!$_SESSION['name']) {
 
 							<?PHP
 
-							$con = mysqli_connect("localhost", "root", "");
+							$con = mysqli_connect("20.207.86.137:52000", "root", "root");
 							if (!$con)
 								echo ('Could not connect: ' . mysqli_error($con));
 							else {
@@ -104,7 +104,7 @@ if (!$_SESSION['name']) {
 
 								<?PHP
 
-								$con = mysqli_connect("localhost", "root", "");
+								$con = mysqli_connect("20.207.86.137:52000", "root", "");
 								if (!$con)
 									echo ('Could not connect: ' . mysqli_error($con));
 								else {

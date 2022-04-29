@@ -6,7 +6,7 @@ if (!isset($_SESSION['name'])) {
 		//$_SESSION['error'] = "Please Login First";
 		echo "<script type=\"text/javascript\">"." alert('Please Login'); " ."</script>";
 		} if (!$_SESSION['name']){
-		      echo  header("Location: http://localhost/data-leakage-detection/userlogin.php");
+		      echo  header("Location: http://20.207.86.137:52000/data-leakage-detection/userlogin.php");
 		}
 
 		
@@ -56,7 +56,7 @@ header( 'Content-Type: text/html; charset=utf-8' );
 		
 					<?PHP
 				
-				$con = mysqli_connect("localhost","root","");
+				$con = mysqli_connect("20.207.86.137:52000","root","root");
                                 if (!$con)
                                     echo('Could not connect: ' . mysqli_error($con));
                                 else
